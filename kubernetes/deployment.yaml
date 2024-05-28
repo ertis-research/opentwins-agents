@@ -2,29 +2,29 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    name: opentwins-agents-testing
-  name: opentwins-agents-testing
+    name: gedera-agents
+  name: gedera-agents
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: pod-opentwins-agents-testing
+      name: pod-gedera-agents
   template:
     metadata:
       labels:
-        name: pod-opentwins-agents-testing
-      name: opentwins-agents-testing
+        name: pod-gedera-agents
+      name: gedera-agents
     spec:
       serviceAccountName: ot-agents
       automountServiceAccountToken: true
       containers:
-        - image: registry.ertis.uma.es/opentwins-agents-testing:0.1.0
-          name: opentwins-agents-testing
+        - image: registry.ertis.uma.es/gedera-agents:1.0.0
+          name: gedera-agents
           env:
           - name: KUBE_NAMESPACE
-            value: digitaltwins
+            value: opentwins
           - name: INSIDE_CLUSTER
-            value: True
+            value: "True"
           ports:
             - containerPort: 8001
           imagePullPolicy: Always
