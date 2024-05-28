@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    name: opentwins-agents-testing
+  name: opentwins-agents-testing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: pod-opentwins-agents-testing
+  template:
+    metadata:
+      labels:
+        name: pod-opentwins-agents-testing
+      name: opentwins-agents-testing
+    spec:
+      serviceAccountName: ot-agents
+      automountServiceAccountToken: true
+      containers:
+        - image: registry.ertis.uma.es/opentwins-agents-testing:0.1.0
+          name: opentwins-agents-testing
+          env:
+          - name: KUBE_NAMESPACE
+            value: digitaltwins
+          - name: INSIDE_CLUSTER
+            value: True
+          ports:
+            - containerPort: 8001
+          imagePullPolicy: Always
