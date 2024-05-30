@@ -6,7 +6,7 @@ sys.path.insert(1, '../service')
 
 from loguru import logger
 from errors import AgentError
-
+import json
 #import dotenv
 import tempfile
 import shutil
@@ -20,6 +20,12 @@ import zipfile
 
 #BaseRouter = APIRouter(prefix='/agents')
 BaseRouter = APIRouter()
+# ['example:aaa', 'asasa:rerer']
+@BaseRouter.get('/prueba')
+async def convert_list(request: Request, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+    data = kubernetesController.get_agent_twin_list("test", "sin-twins-asociaos-pero-de-verdaee", "Deployment")
+    print(data)
+    return JSONResponse(200)
 
 @BaseRouter.get('/agents')
 async def get_agent_list(request: Request, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
@@ -31,15 +37,25 @@ async def get_agent_list(request: Request, kubernetesController: KubernetesContr
         return JSONResponse([], 404)
 
 @BaseRouter.get('/agents/{context}')
-async def get_agent_list(request: Request, context:str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+async def get_agent_list_by_context(request: Request, context: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
     #context = request.headers.get('namespace')
     try:
-        data = kubernetesController.get_running_agents(context)
+        data = kubernetesController.get_running_agents(context = context)
         print(data)
         return JSONResponse(data, 200)
     except AgentError as e:
         return JSONResponse([], 404)
-       
+
+@BaseRouter.get('/agents/{context}/{twinId}')
+async def get_agent_list_by_context_twin(request: Request, context: str, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+    try:
+        data = kubernetesController.get_running_agents(context = context, twinId = twinId)
+        print(data)
+        return JSONResponse(data, 200)
+    except AgentError as e:
+        return JSONResponse([], 404)
+
+# COSAS CONCRETAS DE AGENTE       
 @BaseRouter.post('/agent/{context}/{agentId}')
 async def create_agent(request: Request, context:str, agentId:str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
     payload = await request.json()
@@ -75,7 +91,6 @@ async def resume_agent(request: Request, context :str, agentId: str, kubernetesC
     except AgentError as e:
         return JSONResponse("Failed resuming agent {} in context {}".format(agentId, context), 404)
     
-
 @BaseRouter.get('/agent/{context}/{agentId}')
 async def get_agent_info(request: Request, context :str, agentId: str, kubernetesController:KubernetesControllerService = Depends(KubernetesControllerService)):
     try:
@@ -83,3 +98,19 @@ async def get_agent_info(request: Request, context :str, agentId: str, kubernete
         return JSONResponse(result, 200)
     except AgentError as e:
         return JSONResponse("Failed retrieving agent {} in context {}".format(agentId, context))
+    
+@BaseRouter.put('/agent/{context}/{agentId}/twin/{twinId}/link')
+async def link_agent_twin(request: Request, context: str, agentId: str, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+    try:
+        kubernetesController.link_unlink_agent_twin(context, agentId, twinId, True)
+        return JSONResponse(200)
+    except AgentError as e:
+        return JSONResponse("Failed linking agent {} in context {} to twin".format(agentId, context, twinId), 404)
+
+@BaseRouter.put('/agent/{context}/{agentId}/twin/{twinId}/unlink')
+async def unlink_agent_twin(request: Request, context: str, agentId: str, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+    try:
+        kubernetesController.link_unlink_agent_twin(context, agentId, twinId, False)
+        return JSONResponse(200)
+    except AgentError as e:
+        return JSONResponse("Failed unlinking agent {} in context {} from twin".format(agentId, context, twinId), 404)
