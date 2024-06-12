@@ -177,7 +177,12 @@ class KubernetesControllerService:
                     manifest["metadata"]["labels"]["opentwins.agents/kind"] = "ot-agent"
                     
                     if "opentwins.agents/twins" in manifest["metadata"]["labels"]:
-                        twin_list = json.loads(manifest["metadata"]["labels"]["opentwins.agents/twins"])
+                        
+                        
+                        print(manifest["metadata"]["labels"]["opentwins.agents/twins"])
+                        print(type(manifest["metadata"]["labels"]["opentwins.agents/twins"]))
+                        #twin_list = json.loads(manifest["metadata"]["labels"]["opentwins.agents/twins"])
+                        twin_list = manifest["metadata"]["labels"]["opentwins.agents/twins"]
                         
                         new_twin_list = self.convert_twin_list(twin_list)                        
                         

@@ -20,40 +20,43 @@ import zipfile
 
 #BaseRouter = APIRouter(prefix='/agents')
 BaseRouter = APIRouter()
-# ['example:aaa', 'asasa:rerer']
-@BaseRouter.get('/prueba')
-async def convert_list(request: Request, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
-    data = kubernetesController.get_agent_twin_list("test", "sin-twins-asociaos-pero-de-verdaee", "Deployment")
-    print(data)
-    return JSONResponse(200)
 
-@BaseRouter.get('/agents')
-async def get_agent_list(request: Request, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+@BaseRouter.get('/agents/')
+async def get_agent_list(request: Request, context:str = None, twin:str = None, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
     #context = request.headers.get('namespace')
     try:
-        data = kubernetesController.get_running_agents()
+        data = kubernetesController.get_running_agents(context = context, twinId = twin)
         return JSONResponse(data, 200)
     except AgentError as e:
         return JSONResponse([], 404)
 
-@BaseRouter.get('/agents/{context}')
-async def get_agent_list_by_context(request: Request, context: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
-    #context = request.headers.get('namespace')
-    try:
-        data = kubernetesController.get_running_agents(context = context)
-        print(data)
-        return JSONResponse(data, 200)
-    except AgentError as e:
-        return JSONResponse([], 404)
+# @BaseRouter.get('/agents/{context}')
+# async def get_agent_list_by_context(request: Request, context: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+#     #context = request.headers.get('namespace')
+#     try:
+#         data = kubernetesController.get_running_agents(context = context)
+#         print(data)
+#         return JSONResponse(data, 200)
+#     except AgentError as e:
+#         return JSONResponse([], 404)
 
-@BaseRouter.get('/agents/{context}/{twinId}')
-async def get_agent_list_by_context_twin(request: Request, context: str, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
-    try:
-        data = kubernetesController.get_running_agents(context = context, twinId = twinId)
-        print(data)
-        return JSONResponse(data, 200)
-    except AgentError as e:
-        return JSONResponse([], 404)
+# @BaseRouter.get('/agents/{context}/{twinId}')
+# async def get_agent_list_by_context_twin(request: Request, context: str, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+#     logger.info("Entro por el que no es")
+#     try:
+#         data = kubernetesController.get_running_agents(context = context, twinId = twinId)
+#         return JSONResponse(data, 200)
+#     except AgentError as e:
+#         return JSONResponse([], 404)
+
+# @BaseRouter.get('/agents/twins/{twinId}')
+# async def get_agent_list_by_twin(request: Request, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+#     logger.info("Entro por el que es")
+#     try:
+#         data = kubernetesController.get_running_agents(twinId = twinId)
+#         return JSONResponse(data, 200)
+#     except AgentError as e:
+#         return JSONResponse([], 404)
 
 # COSAS CONCRETAS DE AGENTE       
 @BaseRouter.post('/agent/{context}/{agentId}')
