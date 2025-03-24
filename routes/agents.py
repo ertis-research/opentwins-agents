@@ -10,7 +10,6 @@ import json
 #import dotenv
 import tempfile
 import shutil
-from loguru import logger
 from fastapi import FastAPI, UploadFile, File, Response, Request, Depends, APIRouter
 from fastapi.responses import JSONResponse
 from urllib3 import HTTPResponse
@@ -30,6 +29,13 @@ async def get_agent_list(request: Request, context:str = None, twin:str = None, 
     except AgentError as e:
         return JSONResponse([], 404)
 
+@BaseRouter.get('/agents/{pod}/logs')
+async def get_pod_log(request: Request, pod:str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
+    try:
+        data = kubernetesController.get_pod_logs(pod)
+        return JSONResponse(data, 200)
+    except AgentError as e:
+        return JSONResponse([], 404)
 # @BaseRouter.get('/agents/{context}')
 # async def get_agent_list_by_context(request: Request, context: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):
 #     #context = request.headers.get('namespace')
@@ -101,6 +107,14 @@ async def get_agent_info(request: Request, context :str, agentId: str, kubernete
         return JSONResponse(result, 200)
     except AgentError as e:
         return JSONResponse("Failed retrieving agent {} in context {}".format(agentId, context))
+    
+@BaseRouter.get('/agent/{context}/{agentId}/logs')
+async def get_agent_logs(request: Request, context :str = None, agentId: str = None, kubernetesController:KubernetesControllerService = Depends(KubernetesControllerService)):
+    try:
+        result = kubernetesController.get_agent_logs(context, agentId)
+        return JSONResponse(result, 200)
+    except AgentError as e:
+        return JSONResponse("Failed retrieving logs for agent {} in context {}".format(agentId, context))
     
 @BaseRouter.put('/agent/{context}/{agentId}/twin/{twinId}/link')
 async def link_agent_twin(request: Request, context: str, agentId: str, twinId: str, kubernetesController: KubernetesControllerService = Depends(KubernetesControllerService)):

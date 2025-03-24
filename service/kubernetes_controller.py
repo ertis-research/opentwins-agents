@@ -105,6 +105,7 @@ class KubernetesControllerService:
 
                     list_of_pods = [
                         {
+                            "podId": pod.metadata.name,
                             "id": pod.metadata.labels["opentwins.agents/id"],
                             "name": pod.metadata.labels["opentwins.agents/name"],
                             "phase": pod.status.phase,
@@ -133,6 +134,7 @@ class KubernetesControllerService:
                     
                     list_of_pods = [
                         {
+                            "podId": pod.metadata.name,
                             "id": pod.metadata.labels["opentwins.agents/id"],
                             "phase": pod.status.phase,
                             "status": pod.status.container_statuses[0].ready,
@@ -287,6 +289,7 @@ class KubernetesControllerService:
                 else:
                     data = self.batch_api.read_namespaced_cron_job("opentwins-agent-"+agentId, self.namespace)
                     
+                    
                 data_dict = data.to_dict()
                 data_dict["metadata"]["labels"]["opentwins.agents/twins"] = self.convert_twin_list(data_dict["metadata"]["labels"]["opentwins.agents/twins"])
                 
@@ -307,6 +310,45 @@ class KubernetesControllerService:
                 logger.error("Failed to get deployment %s info", agentId)
                 tries+=1
         raise AgentError("Failed to patch agent")
+    
+    def get_agent_logs(self, context: str, agentId: str):
+        logger.info("Getting deployment %s logs", agentId)
+        
+        tries = 0
+        while(tries < 3):   
+            try: 
+                kind = self.check_if_exists(context, agentId)
+                if not kind:
+                    raise AgentError("There is not any agent with that characteristics")
+                logger.info("Found, patching the process...")
+                
+                pod_list = self.api_instance.list_namespaced_pod(self.namespace, label_selector="opentwins.agents/kind=ot-agent, opentwins.agents/type={}, opentwins.agents/context={}, opentwins.agents/id={}".format(kind, context, agentId),watch=False)
+                name = pod_list.items[0].metadata.name
+                log = self.api_instance.read_namespaced_pod_log(name = name, namespace = self.namespace)
+                
+                return log
+            except Exception as e:
+                logger.error(e)
+                logger.error("Failed to patch agent %s", agentId)
+                tries+=1
+        raise AgentError("Failed to patch agent")
+    
+    def get_pod_logs(self, pod: str):
+        logger.info("Getting pod %s logs", pod)
+        
+        tries = 0
+        while(tries < 3):   
+            try: 
+                log = self.api_instance.read_namespaced_pod_log(name = pod, namespace = self.namespace)
+                
+                return log
+            except Exception as e:
+                logger.error(e)
+                logger.error("Failed to get pod %s logs", pod)
+                tries+=1
+        raise AgentError("Failed to get pod logs")        
+
+        
     
     def link_unlink_agent_twin(self, context: str, agentId: str, twinId:str, link: bool):
         tries = 0

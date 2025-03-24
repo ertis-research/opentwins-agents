@@ -21,7 +21,9 @@ def get_kubernetes_api_client():
     """
     # KUBERNETES code goes here
     aConfiguration = client.Configuration()
-    if os.getenv("INSIDE_CLUSTER"):
+    insideCluster = os.getenv("INSIDE_CLUSTER")
+    
+    if insideCluster:
         logger.info("RUNNING INSIDE CLUSTER")
         config.load_incluster_config(aConfiguration) # To run inside the container
     else:
