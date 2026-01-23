@@ -18,7 +18,7 @@ spec:
       serviceAccountName: ot-agents
       automountServiceAccountToken: true
       containers:
-        - image: registry.ertis.uma.es/gedera-agents:1.0.0
+        - image: image-name
           name: gedera-agents
           env:
           - name: KUBE_NAMESPACE
@@ -27,4 +27,5 @@ spec:
             value: "True"
           ports:
             - containerPort: 8001
+
           imagePullPolicy: Always
