@@ -1,0 +1,17 @@
+# Data producer agent dependencies
+
+# MQTT client
+paho-mqtt>=1.6.1
+
+# InfluxDB client
+influxdb-client>=1.36.0
+
+# Data generation and utilities
+python-dateutil>=2.8.2
+
+# Machine Learning
+numpy>=1.24.0
+tensorflow>=2.15.0
+
+# Optional: Data processing (uncomment if needed)
+# pandas>=2.0.0

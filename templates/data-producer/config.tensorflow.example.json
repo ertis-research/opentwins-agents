@@ -1,0 +1,32 @@
+{
+  "model_path": "model/saved_model",
+  "input_shape": [10],
+  "output_labels": ["class_0", "class_1", "class_2"],
+  "preprocessing": {
+    "normalize": true,
+    "mean": 0.0,
+    "std": 1.0,
+    "scale": false,
+    "min": 0.0,
+    "max": 1.0
+  },
+  "prediction_interval": 1.0,
+  "batch_interval": 0.5,
+  "mqtt": {
+    "enabled": true,
+    "broker": "localhost",
+    "port": 1883,
+    "client_id": "tf_producer",
+    "prediction_topic": "ml/predictions",
+    "username": null,
+    "password": null
+  },
+  "influxdb": {
+    "enabled": true,
+    "url": "http://localhost:8086",
+    "token": "your-influxdb-token-here",
+    "org": "your-organization",
+    "bucket": "predictions",
+    "measurement": "ml_predictions"
+  }
+}

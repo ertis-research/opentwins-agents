@@ -1,0 +1,25 @@
+{
+  "mqtt": {
+    "broker": "localhost",
+    "port": 1883,
+    "client_id": "producer_001",
+    "username": null,
+    "password": null,
+    "use_tls": false,
+    "ca_certs": null
+  },
+  "influxdb": {
+    "url": "http://localhost:8086",
+    "token": "your-influxdb-token-here",
+    "org": "your-organization",
+    "bucket": "your-bucket",
+    "batch_size": 1000,
+    "flush_interval": 10000,
+    "timeout": 30000
+  },
+  "mqtt_topic": "sensors/data",
+  "measurement": "sensors",
+  "sensor_id": "sensor_001",
+  "location": "lab",
+  "interval": 5
+}
