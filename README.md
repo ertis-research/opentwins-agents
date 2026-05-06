@@ -61,6 +61,21 @@ Agent deployment follows a structured workflow defined in the architecture:
 This workflow ensures reproducibility, modularity, and ease of adoption.
 
 ---
+## API Endpoints
+
+| Method | Path | Parameters | Response |
+|--------|------|------------|----------|
+| `GET` | `/agents/` | Query: `context` (opt.), `twin` (opt.) | `200` agent list · `404` empty list |
+| `GET` | `/agents/{pod}/logs` | Path: `pod` | `200` pod logs · `404` empty list |
+| `POST` | `/agent/{context}/{agentId}` | Path: `context`, `agentId` · Body: JSON with agent definition | `200` deployed · `422` already exists · `500` error |
+| `DELETE` | `/agent/{context}/{agentId}` | Path: `context`, `agentId` | `200` deleted · error message |
+| `POST` | `/agent/{context}/{agentId}/pause` | Path: `context`, `agentId` | `200` paused · `404` error |
+| `POST` | `/agent/{context}/{agentId}/resume` | Path: `context`, `agentId` | `200` resumed · `404` error |
+| `GET` | `/agent/{context}/{agentId}` | Path: `context`, `agentId` | `200` agent info · error message |
+| `GET` | `/agent/{context}/{agentId}/logs` | Path: `context`, `agentId` | `200` agent logs · error message |
+| `PUT` | `/agent/{context}/{agentId}/twin/{twinId}/link` | Path: `context`, `agentId`, `twinId` | `200` linked · `404` error |
+| `PUT` | `/agent/{context}/{agentId}/twin/{twinId}/unlink` | Path: `context`, `agentId`, `twinId` | `200` unlinked · `404` error |
+---
 
 ## Installation
 
