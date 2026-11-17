@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swarm-agent
+  labels:
+    app: swarm-agent
+spec:
+  # Empezamos con 20 agentes, ¡pero puedes cambiarlo a lo que quieras!
+  replicas: 20
+  selector:
+    matchLabels:
+      app: swarm-agent
+  template:
+    metadata:
+      labels:
+        app: swarm-agent
+    spec:
+      containers:
+      - name: agent
+        # Cambia esto por el nombre de la imagen Docker que hayas buildeado
+        image: <DOCKER_REGISTRY>/gedera/swarm-agent:1.0.0
+        # Si usas Minikube o Docker Desktop localmente, esto evita que intente descargarlo de internet
+        imagePullPolicy: IfNotPresent 
+        env:
+        # Apunta al nombre del Service de tu broker MQTT en Kubernetes
+        - name: MQTT_BROKER
+          value: "<MQTT_BROKER_HOST>"
+        - name: MQTT_PORT
+          value: "1883"
+        # MAGIA: Inyecta el nombre exacto de este pod como ID del agente
+        - name: AGENT_ID
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+              
+        # Si le pusiste usuario y contraseña al MQTT, descomenta esto:
+        #- name: MQTT_USER
+        #  value: "tu_usuario"
+        #- name: MQTT_PASS
+        #  value: "tu_password"

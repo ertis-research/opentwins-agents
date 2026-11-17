@@ -1,0 +1,1649 @@
+[
+    {
+        "father": {
+            "father": {
+                "father": {
+                    "father": {
+                        "father": {
+                            "father": {
+                                "father": {
+                                    "father": {
+                                        "father": {
+                                            "father": {
+                                                "father": {
+                                                    "father": {
+                                                        "father": {
+                                                            "father": {
+                                                                "father": {
+                                                                    "father": {
+                                                                        "father": {
+                                                                            "father": {
+                                                                                "father": {
+                                                                                    "father": {
+                                                                                        "father": {
+                                                                                            "father": {
+                                                                                                "father": {
+                                                                                                    "father": {
+                                                                                                        "father": null,
+                                                                                                        "consumption": 0,
+                                                                                                        "cumulative_consumption": 0,
+                                                                                                        "price": 0,
+                                                                                                        "cumulative_price": 0,
+                                                                                                        "_episode_ended": false,
+                                                                                                        "day_step": -1,
+                                                                                                        "actions": {},
+                                                                                                        "agents_info": {
+                                                                                                            "bateria1": {
+                                                                                                                "soc": 50,
+                                                                                                                "chargeHistory": 0,
+                                                                                                                "dischargeHistory": 0,
+                                                                                                                "consumption": 0
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "specific": {
+                                                                                                            "actual_temp": 23
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "consumption": 12.416666666666671,
+                                                                                                    "cumulative_consumption": 12.416666666666671,
+                                                                                                    "price": 2.1294583333333343,
+                                                                                                    "cumulative_price": 2.1294583333333343,
+                                                                                                    "_episode_ended": false,
+                                                                                                    "day_step": 0,
+                                                                                                    "actions": {
+                                                                                                        "bateria1": 0
+                                                                                                    },
+                                                                                                    "agents_info": {
+                                                                                                        "bateria1": {
+                                                                                                            "soc": 50,
+                                                                                                            "chargeHistory": 0,
+                                                                                                            "dischargeHistory": 0,
+                                                                                                            "consumption": 0
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "specific": {
+                                                                                                        "actual_temp": 23
+                                                                                                    }
+                                                                                                },
+                                                                                                "consumption": 19.818181818181813,
+                                                                                                "cumulative_consumption": 32.234848484848484,
+                                                                                                "price": 3.3988181818181813,
+                                                                                                "cumulative_price": 5.528276515151516,
+                                                                                                "_episode_ended": false,
+                                                                                                "day_step": 1,
+                                                                                                "actions": {
+                                                                                                    "bateria1": 0
+                                                                                                },
+                                                                                                "agents_info": {
+                                                                                                    "bateria1": {
+                                                                                                        "soc": 50,
+                                                                                                        "chargeHistory": 0,
+                                                                                                        "dischargeHistory": 0,
+                                                                                                        "consumption": 0
+                                                                                                    }
+                                                                                                },
+                                                                                                "specific": {
+                                                                                                    "actual_temp": 23
+                                                                                                }
+                                                                                            },
+                                                                                            "consumption": 11.916666666666671,
+                                                                                            "cumulative_consumption": 44.151515151515156,
+                                                                                            "price": 2.0437083333333343,
+                                                                                            "cumulative_price": 7.571984848484851,
+                                                                                            "_episode_ended": false,
+                                                                                            "day_step": 2,
+                                                                                            "actions": {
+                                                                                                "bateria1": 0
+                                                                                            },
+                                                                                            "agents_info": {
+                                                                                                "bateria1": {
+                                                                                                    "soc": 50,
+                                                                                                    "chargeHistory": 0,
+                                                                                                    "dischargeHistory": 0,
+                                                                                                    "consumption": 0
+                                                                                                }
+                                                                                            },
+                                                                                            "specific": {
+                                                                                                "actual_temp": 23
+                                                                                            }
+                                                                                        },
+                                                                                        "consumption": 11.666666666666671,
+                                                                                        "cumulative_consumption": 55.81818181818183,
+                                                                                        "price": 2.0008333333333344,
+                                                                                        "cumulative_price": 9.572818181818185,
+                                                                                        "_episode_ended": false,
+                                                                                        "day_step": 3,
+                                                                                        "actions": {
+                                                                                            "bateria1": 0
+                                                                                        },
+                                                                                        "agents_info": {
+                                                                                            "bateria1": {
+                                                                                                "soc": 50,
+                                                                                                "chargeHistory": 0,
+                                                                                                "dischargeHistory": 0,
+                                                                                                "consumption": 0
+                                                                                            }
+                                                                                        },
+                                                                                        "specific": {
+                                                                                            "actual_temp": 23
+                                                                                        }
+                                                                                    },
+                                                                                    "consumption": 11.916666666666671,
+                                                                                    "cumulative_consumption": 67.7348484848485,
+                                                                                    "price": 2.0437083333333343,
+                                                                                    "cumulative_price": 11.61652651515152,
+                                                                                    "_episode_ended": false,
+                                                                                    "day_step": 4,
+                                                                                    "actions": {
+                                                                                        "bateria1": 0
+                                                                                    },
+                                                                                    "agents_info": {
+                                                                                        "bateria1": {
+                                                                                            "soc": 50,
+                                                                                            "chargeHistory": 0,
+                                                                                            "dischargeHistory": 0,
+                                                                                            "consumption": 0
+                                                                                        }
+                                                                                    },
+                                                                                    "specific": {
+                                                                                        "actual_temp": 23
+                                                                                    }
+                                                                                },
+                                                                                "consumption": 16.33333333333333,
+                                                                                "cumulative_consumption": 84.06818181818183,
+                                                                                "price": 2.801166666666666,
+                                                                                "cumulative_price": 14.417693181818187,
+                                                                                "_episode_ended": false,
+                                                                                "day_step": 5,
+                                                                                "actions": {
+                                                                                    "bateria1": 0
+                                                                                },
+                                                                                "agents_info": {
+                                                                                    "bateria1": {
+                                                                                        "soc": 50,
+                                                                                        "chargeHistory": 0,
+                                                                                        "dischargeHistory": 0,
+                                                                                        "consumption": 0
+                                                                                    }
+                                                                                },
+                                                                                "specific": {
+                                                                                    "actual_temp": 23
+                                                                                }
+                                                                            },
+                                                                            "consumption": 20.75,
+                                                                            "cumulative_consumption": 104.81818181818183,
+                                                                            "price": 3.558625,
+                                                                            "cumulative_price": 17.976318181818186,
+                                                                            "_episode_ended": false,
+                                                                            "day_step": 6,
+                                                                            "actions": {
+                                                                                "bateria1": 0
+                                                                            },
+                                                                            "agents_info": {
+                                                                                "bateria1": {
+                                                                                    "soc": 50,
+                                                                                    "chargeHistory": 0,
+                                                                                    "dischargeHistory": 0,
+                                                                                    "consumption": 0
+                                                                                }
+                                                                            },
+                                                                            "specific": {
+                                                                                "actual_temp": 23
+                                                                            }
+                                                                        },
+                                                                        "consumption": 37.41666666666667,
+                                                                        "cumulative_consumption": 142.2348484848485,
+                                                                        "price": 6.416958333333334,
+                                                                        "cumulative_price": 24.39327651515152,
+                                                                        "_episode_ended": false,
+                                                                        "day_step": 7,
+                                                                        "actions": {
+                                                                            "bateria1": 0
+                                                                        },
+                                                                        "agents_info": {
+                                                                            "bateria1": {
+                                                                                "soc": 50,
+                                                                                "chargeHistory": 0,
+                                                                                "dischargeHistory": 0,
+                                                                                "consumption": 0
+                                                                            }
+                                                                        },
+                                                                        "specific": {
+                                                                            "actual_temp": 23
+                                                                        }
+                                                                    },
+                                                                    "consumption": 83.66666666666667,
+                                                                    "cumulative_consumption": 225.90151515151518,
+                                                                    "price": 14.348833333333335,
+                                                                    "cumulative_price": 38.74210984848486,
+                                                                    "_episode_ended": false,
+                                                                    "day_step": 8,
+                                                                    "actions": {
+                                                                        "bateria1": 4
+                                                                    },
+                                                                    "agents_info": {
+                                                                        "bateria1": {
+                                                                            "soc": 90,
+                                                                            "chargeHistory": 40,
+                                                                            "dischargeHistory": 0,
+                                                                            "consumption": 40
+                                                                        }
+                                                                    },
+                                                                    "specific": {
+                                                                        "actual_temp": 23
+                                                                    }
+                                                                },
+                                                                "consumption": 55.58333333333333,
+                                                                "cumulative_consumption": 281.4848484848485,
+                                                                "price": 10.822075,
+                                                                "cumulative_price": 49.56418484848486,
+                                                                "_episode_ended": false,
+                                                                "day_step": 9,
+                                                                "actions": {
+                                                                    "bateria1": 0
+                                                                },
+                                                                "agents_info": {
+                                                                    "bateria1": {
+                                                                        "soc": 90,
+                                                                        "chargeHistory": 40,
+                                                                        "dischargeHistory": 0,
+                                                                        "consumption": 40
+                                                                    }
+                                                                },
+                                                                "specific": {
+                                                                    "actual_temp": 23
+                                                                }
+                                                            },
+                                                            "consumption": 9.5,
+                                                            "cumulative_consumption": 290.9848484848485,
+                                                            "price": 1.84965,
+                                                            "cumulative_price": 51.41383484848485,
+                                                            "_episode_ended": false,
+                                                            "day_step": 10,
+                                                            "actions": {
+                                                                "bateria1": 10
+                                                            },
+                                                            "agents_info": {
+                                                                "bateria1": {
+                                                                    "soc": 50,
+                                                                    "chargeHistory": 40,
+                                                                    "dischargeHistory": 40,
+                                                                    "consumption": -40
+                                                                }
+                                                            },
+                                                            "specific": {
+                                                                "actual_temp": 23
+                                                            }
+                                                        },
+                                                        "consumption": 3.0833333333333286,
+                                                        "cumulative_consumption": 294.0681818181818,
+                                                        "price": 0.6003249999999991,
+                                                        "cumulative_price": 52.01415984848485,
+                                                        "_episode_ended": false,
+                                                        "day_step": 11,
+                                                        "actions": {
+                                                            "bateria1": 11
+                                                        },
+                                                        "agents_info": {
+                                                            "bateria1": {
+                                                                "soc": 0,
+                                                                "chargeHistory": 40,
+                                                                "dischargeHistory": 90,
+                                                                "consumption": -50
+                                                            }
+                                                        },
+                                                        "specific": {
+                                                            "actual_temp": 23
+                                                        }
+                                                    },
+                                                    "consumption": 56,
+                                                    "cumulative_consumption": 350.0681818181818,
+                                                    "price": 10.9032,
+                                                    "cumulative_price": 62.91735984848485,
+                                                    "_episode_ended": false,
+                                                    "day_step": 12,
+                                                    "actions": {
+                                                        "bateria1": 0
+                                                    },
+                                                    "agents_info": {
+                                                        "bateria1": {
+                                                            "soc": 0,
+                                                            "chargeHistory": 40,
+                                                            "dischargeHistory": 90,
+                                                            "consumption": -50
+                                                        }
+                                                    },
+                                                    "specific": {
+                                                        "actual_temp": 23
+                                                    }
+                                                },
+                                                "consumption": 60.27272727272728,
+                                                "cumulative_consumption": 410.3409090909091,
+                                                "price": 11.735100000000003,
+                                                "cumulative_price": 74.65245984848485,
+                                                "_episode_ended": false,
+                                                "day_step": 13,
+                                                "actions": {
+                                                    "bateria1": 0
+                                                },
+                                                "agents_info": {
+                                                    "bateria1": {
+                                                        "soc": 0,
+                                                        "chargeHistory": 40,
+                                                        "dischargeHistory": 90,
+                                                        "consumption": -50
+                                                    }
+                                                },
+                                                "specific": {
+                                                    "actual_temp": 23
+                                                }
+                                            },
+                                            "consumption": 50,
+                                            "cumulative_consumption": 460.3409090909091,
+                                            "price": 8.575000000000001,
+                                            "cumulative_price": 83.22745984848486,
+                                            "_episode_ended": false,
+                                            "day_step": 14,
+                                            "actions": {
+                                                "bateria1": 0
+                                            },
+                                            "agents_info": {
+                                                "bateria1": {
+                                                    "soc": 0,
+                                                    "chargeHistory": 40,
+                                                    "dischargeHistory": 90,
+                                                    "consumption": -50
+                                                }
+                                            },
+                                            "specific": {
+                                                "actual_temp": 23
+                                            }
+                                        },
+                                        "consumption": 53.91666666666667,
+                                        "cumulative_consumption": 514.2575757575758,
+                                        "price": 9.246708333333334,
+                                        "cumulative_price": 92.47416818181819,
+                                        "_episode_ended": false,
+                                        "day_step": 15,
+                                        "actions": {
+                                            "bateria1": 0
+                                        },
+                                        "agents_info": {
+                                            "bateria1": {
+                                                "soc": 0,
+                                                "chargeHistory": 40,
+                                                "dischargeHistory": 90,
+                                                "consumption": -50
+                                            }
+                                        },
+                                        "specific": {
+                                            "actual_temp": 23
+                                        }
+                                    },
+                                    "consumption": 56.66666666666667,
+                                    "cumulative_consumption": 570.9242424242424,
+                                    "price": 9.718333333333335,
+                                    "cumulative_price": 102.19250151515152,
+                                    "_episode_ended": false,
+                                    "day_step": 16,
+                                    "actions": {
+                                        "bateria1": 1
+                                    },
+                                    "agents_info": {
+                                        "bateria1": {
+                                            "soc": 10,
+                                            "chargeHistory": 50,
+                                            "dischargeHistory": 90,
+                                            "consumption": 10
+                                        }
+                                    },
+                                    "specific": {
+                                        "actual_temp": 23
+                                    }
+                                },
+                                "consumption": 102.91666666666667,
+                                "cumulative_consumption": 673.840909090909,
+                                "price": 17.650208333333335,
+                                "cumulative_price": 119.84270984848486,
+                                "_episode_ended": false,
+                                "day_step": 17,
+                                "actions": {
+                                    "bateria1": 6
+                                },
+                                "agents_info": {
+                                    "bateria1": {
+                                        "soc": 70,
+                                        "chargeHistory": 110,
+                                        "dischargeHistory": 90,
+                                        "consumption": 60
+                                    }
+                                },
+                                "specific": {
+                                    "actual_temp": 23
+                                }
+                            },
+                            "consumption": 6,
+                            "cumulative_consumption": 679.840909090909,
+                            "price": 1.1682000000000001,
+                            "cumulative_price": 121.01090984848486,
+                            "_episode_ended": false,
+                            "day_step": 18,
+                            "actions": {
+                                "bateria1": 9
+                            },
+                            "agents_info": {
+                                "bateria1": {
+                                    "soc": 40,
+                                    "chargeHistory": 110,
+                                    "dischargeHistory": 120,
+                                    "consumption": -30
+                                }
+                            },
+                            "specific": {
+                                "actual_temp": 23
+                            }
+                        },
+                        "consumption": 3.0833333333333286,
+                        "cumulative_consumption": 682.9242424242424,
+                        "price": 0.6003249999999991,
+                        "cumulative_price": 121.61123484848486,
+                        "_episode_ended": false,
+                        "day_step": 19,
+                        "actions": {
+                            "bateria1": 8
+                        },
+                        "agents_info": {
+                            "bateria1": {
+                                "soc": 20,
+                                "chargeHistory": 110,
+                                "dischargeHistory": 140,
+                                "consumption": -20
+                            }
+                        },
+                        "specific": {
+                            "actual_temp": 23
+                        }
+                    },
+                    "consumption": 8.083333333333329,
+                    "cumulative_consumption": 691.0075757575758,
+                    "price": 1.5738249999999991,
+                    "cumulative_price": 123.18505984848485,
+                    "_episode_ended": false,
+                    "day_step": 20,
+                    "actions": {
+                        "bateria1": 7
+                    },
+                    "agents_info": {
+                        "bateria1": {
+                            "soc": 10,
+                            "chargeHistory": 110,
+                            "dischargeHistory": 150,
+                            "consumption": -10
+                        }
+                    },
+                    "specific": {
+                        "actual_temp": 23
+                    }
+                },
+                "consumption": 4.583333333333329,
+                "cumulative_consumption": 695.5909090909091,
+                "price": 0.8923749999999991,
+                "cumulative_price": 124.07743484848486,
+                "_episode_ended": false,
+                "day_step": 21,
+                "actions": {
+                    "bateria1": 7
+                },
+                "agents_info": {
+                    "bateria1": {
+                        "soc": 0,
+                        "chargeHistory": 110,
+                        "dischargeHistory": 160,
+                        "consumption": -10
+                    }
+                },
+                "specific": {
+                    "actual_temp": 23
+                }
+            },
+            "consumption": 14.083333333333329,
+            "cumulative_consumption": 709.6742424242425,
+            "price": 2.415291666666666,
+            "cumulative_price": 126.49272651515152,
+            "_episode_ended": false,
+            "day_step": 22,
+            "actions": {
+                "bateria1": 0
+            },
+            "agents_info": {
+                "bateria1": {
+                    "soc": 0,
+                    "chargeHistory": 110,
+                    "dischargeHistory": 160,
+                    "consumption": -10
+                }
+            },
+            "specific": {
+                "actual_temp": 23
+            }
+        },
+        "consumption": 13.583333333333329,
+        "cumulative_consumption": 723.2575757575759,
+        "price": 2.329541666666666,
+        "cumulative_price": 128.82226818181817,
+        "_episode_ended": true,
+        "day_step": 23,
+        "actions": {
+            "bateria1": 0
+        },
+        "agents_info": {
+            "bateria1": {
+                "soc": 0,
+                "chargeHistory": 110,
+                "dischargeHistory": 160,
+                "consumption": -10
+            }
+        },
+        "specific": {
+            "actual_temp": 23
+        }
+    },
+    {
+        "father": {
+            "father": {
+                "father": {
+                    "father": {
+                        "father": {
+                            "father": {
+                                "father": {
+                                    "father": {
+                                        "father": {
+                                            "father": {
+                                                "father": {
+                                                    "father": {
+                                                        "father": {
+                                                            "father": {
+                                                                "father": {
+                                                                    "father": {
+                                                                        "father": {
+                                                                            "father": {
+                                                                                "father": {
+                                                                                    "father": {
+                                                                                        "father": {
+                                                                                            "father": {
+                                                                                                "father": {
+                                                                                                    "father": {
+                                                                                                        "father": null,
+                                                                                                        "consumption": 0,
+                                                                                                        "cumulative_consumption": 0,
+                                                                                                        "price": 0,
+                                                                                                        "cumulative_price": 0,
+                                                                                                        "_episode_ended": false,
+                                                                                                        "day_step": -1,
+                                                                                                        "actions": {},
+                                                                                                        "agents_info": {
+                                                                                                            "bateria1": {
+                                                                                                                "soc": 0,
+                                                                                                                "chargeHistory": 0,
+                                                                                                                "dischargeHistory": 0,
+                                                                                                                "consumption": 0
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "specific": {
+                                                                                                            "actual_temp": 23
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "consumption": 12.416666666666671,
+                                                                                                    "cumulative_consumption": 12.416666666666671,
+                                                                                                    "price": 2.1294583333333343,
+                                                                                                    "cumulative_price": 2.1294583333333343,
+                                                                                                    "_episode_ended": false,
+                                                                                                    "day_step": 0,
+                                                                                                    "actions": {
+                                                                                                        "bateria1": 0
+                                                                                                    },
+                                                                                                    "agents_info": {
+                                                                                                        "bateria1": {
+                                                                                                            "soc": 0,
+                                                                                                            "chargeHistory": 0,
+                                                                                                            "dischargeHistory": 0,
+                                                                                                            "consumption": 0
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "specific": {
+                                                                                                        "actual_temp": 23
+                                                                                                    }
+                                                                                                },
+                                                                                                "consumption": 19.818181818181813,
+                                                                                                "cumulative_consumption": 32.234848484848484,
+                                                                                                "price": 3.3988181818181813,
+                                                                                                "cumulative_price": 5.528276515151516,
+                                                                                                "_episode_ended": false,
+                                                                                                "day_step": 1,
+                                                                                                "actions": {
+                                                                                                    "bateria1": 0
+                                                                                                },
+                                                                                                "agents_info": {
+                                                                                                    "bateria1": {
+                                                                                                        "soc": 0,
+                                                                                                        "chargeHistory": 0,
+                                                                                                        "dischargeHistory": 0,
+                                                                                                        "consumption": 0
+                                                                                                    }
+                                                                                                },
+                                                                                                "specific": {
+                                                                                                    "actual_temp": 23
+                                                                                                }
+                                                                                            },
+                                                                                            "consumption": 11.916666666666671,
+                                                                                            "cumulative_consumption": 44.151515151515156,
+                                                                                            "price": 2.0437083333333343,
+                                                                                            "cumulative_price": 7.571984848484851,
+                                                                                            "_episode_ended": false,
+                                                                                            "day_step": 2,
+                                                                                            "actions": {
+                                                                                                "bateria1": 0
+                                                                                            },
+                                                                                            "agents_info": {
+                                                                                                "bateria1": {
+                                                                                                    "soc": 0,
+                                                                                                    "chargeHistory": 0,
+                                                                                                    "dischargeHistory": 0,
+                                                                                                    "consumption": 0
+                                                                                                }
+                                                                                            },
+                                                                                            "specific": {
+                                                                                                "actual_temp": 23
+                                                                                            }
+                                                                                        },
+                                                                                        "consumption": 11.666666666666671,
+                                                                                        "cumulative_consumption": 55.81818181818183,
+                                                                                        "price": 2.0008333333333344,
+                                                                                        "cumulative_price": 9.572818181818185,
+                                                                                        "_episode_ended": false,
+                                                                                        "day_step": 3,
+                                                                                        "actions": {
+                                                                                            "bateria1": 0
+                                                                                        },
+                                                                                        "agents_info": {
+                                                                                            "bateria1": {
+                                                                                                "soc": 0,
+                                                                                                "chargeHistory": 0,
+                                                                                                "dischargeHistory": 0,
+                                                                                                "consumption": 0
+                                                                                            }
+                                                                                        },
+                                                                                        "specific": {
+                                                                                            "actual_temp": 23
+                                                                                        }
+                                                                                    },
+                                                                                    "consumption": 11.916666666666671,
+                                                                                    "cumulative_consumption": 67.7348484848485,
+                                                                                    "price": 2.0437083333333343,
+                                                                                    "cumulative_price": 11.61652651515152,
+                                                                                    "_episode_ended": false,
+                                                                                    "day_step": 4,
+                                                                                    "actions": {
+                                                                                        "bateria1": 0
+                                                                                    },
+                                                                                    "agents_info": {
+                                                                                        "bateria1": {
+                                                                                            "soc": 0,
+                                                                                            "chargeHistory": 0,
+                                                                                            "dischargeHistory": 0,
+                                                                                            "consumption": 0
+                                                                                        }
+                                                                                    },
+                                                                                    "specific": {
+                                                                                        "actual_temp": 23
+                                                                                    }
+                                                                                },
+                                                                                "consumption": 16.33333333333333,
+                                                                                "cumulative_consumption": 84.06818181818183,
+                                                                                "price": 2.801166666666666,
+                                                                                "cumulative_price": 14.417693181818187,
+                                                                                "_episode_ended": false,
+                                                                                "day_step": 5,
+                                                                                "actions": {
+                                                                                    "bateria1": 0
+                                                                                },
+                                                                                "agents_info": {
+                                                                                    "bateria1": {
+                                                                                        "soc": 0,
+                                                                                        "chargeHistory": 0,
+                                                                                        "dischargeHistory": 0,
+                                                                                        "consumption": 0
+                                                                                    }
+                                                                                },
+                                                                                "specific": {
+                                                                                    "actual_temp": 23
+                                                                                }
+                                                                            },
+                                                                            "consumption": 20.75,
+                                                                            "cumulative_consumption": 104.81818181818183,
+                                                                            "price": 3.558625,
+                                                                            "cumulative_price": 17.976318181818186,
+                                                                            "_episode_ended": false,
+                                                                            "day_step": 6,
+                                                                            "actions": {
+                                                                                "bateria1": 0
+                                                                            },
+                                                                            "agents_info": {
+                                                                                "bateria1": {
+                                                                                    "soc": 0,
+                                                                                    "chargeHistory": 0,
+                                                                                    "dischargeHistory": 0,
+                                                                                    "consumption": 0
+                                                                                }
+                                                                            },
+                                                                            "specific": {
+                                                                                "actual_temp": 23
+                                                                            }
+                                                                        },
+                                                                        "consumption": 67.41666666666667,
+                                                                        "cumulative_consumption": 172.2348484848485,
+                                                                        "price": 11.561958333333335,
+                                                                        "cumulative_price": 29.538276515151523,
+                                                                        "_episode_ended": false,
+                                                                        "day_step": 7,
+                                                                        "actions": {
+                                                                            "bateria1": 3
+                                                                        },
+                                                                        "agents_info": {
+                                                                            "bateria1": {
+                                                                                "soc": 30,
+                                                                                "chargeHistory": 30,
+                                                                                "dischargeHistory": 0,
+                                                                                "consumption": 30
+                                                                            }
+                                                                        },
+                                                                        "specific": {
+                                                                            "actual_temp": 23
+                                                                        }
+                                                                    },
+                                                                    "consumption": 103.66666666666667,
+                                                                    "cumulative_consumption": 275.9015151515152,
+                                                                    "price": 17.778833333333335,
+                                                                    "cumulative_price": 47.31710984848486,
+                                                                    "_episode_ended": false,
+                                                                    "day_step": 8,
+                                                                    "actions": {
+                                                                        "bateria1": 6
+                                                                    },
+                                                                    "agents_info": {
+                                                                        "bateria1": {
+                                                                            "soc": 90,
+                                                                            "chargeHistory": 90,
+                                                                            "dischargeHistory": 0,
+                                                                            "consumption": 60
+                                                                        }
+                                                                    },
+                                                                    "specific": {
+                                                                        "actual_temp": 23
+                                                                    }
+                                                                },
+                                                                "consumption": 55.58333333333333,
+                                                                "cumulative_consumption": 331.4848484848485,
+                                                                "price": 10.822075,
+                                                                "cumulative_price": 58.13918484848486,
+                                                                "_episode_ended": false,
+                                                                "day_step": 9,
+                                                                "actions": {
+                                                                    "bateria1": 0
+                                                                },
+                                                                "agents_info": {
+                                                                    "bateria1": {
+                                                                        "soc": 90,
+                                                                        "chargeHistory": 90,
+                                                                        "dischargeHistory": 0,
+                                                                        "consumption": 60
+                                                                    }
+                                                                },
+                                                                "specific": {
+                                                                    "actual_temp": 23
+                                                                }
+                                                            },
+                                                            "consumption": 9.5,
+                                                            "cumulative_consumption": 340.9848484848485,
+                                                            "price": 1.84965,
+                                                            "cumulative_price": 59.988834848484856,
+                                                            "_episode_ended": false,
+                                                            "day_step": 10,
+                                                            "actions": {
+                                                                "bateria1": 10
+                                                            },
+                                                            "agents_info": {
+                                                                "bateria1": {
+                                                                    "soc": 50,
+                                                                    "chargeHistory": 90,
+                                                                    "dischargeHistory": 40,
+                                                                    "consumption": -40
+                                                                }
+                                                            },
+                                                            "specific": {
+                                                                "actual_temp": 23
+                                                            }
+                                                        },
+                                                        "consumption": 3.0833333333333286,
+                                                        "cumulative_consumption": 344.0681818181818,
+                                                        "price": 0.6003249999999991,
+                                                        "cumulative_price": 60.589159848484854,
+                                                        "_episode_ended": false,
+                                                        "day_step": 11,
+                                                        "actions": {
+                                                            "bateria1": 11
+                                                        },
+                                                        "agents_info": {
+                                                            "bateria1": {
+                                                                "soc": 0,
+                                                                "chargeHistory": 90,
+                                                                "dischargeHistory": 90,
+                                                                "consumption": -50
+                                                            }
+                                                        },
+                                                        "specific": {
+                                                            "actual_temp": 23
+                                                        }
+                                                    },
+                                                    "consumption": 56,
+                                                    "cumulative_consumption": 400.0681818181818,
+                                                    "price": 10.9032,
+                                                    "cumulative_price": 71.49235984848485,
+                                                    "_episode_ended": false,
+                                                    "day_step": 12,
+                                                    "actions": {
+                                                        "bateria1": 0
+                                                    },
+                                                    "agents_info": {
+                                                        "bateria1": {
+                                                            "soc": 0,
+                                                            "chargeHistory": 90,
+                                                            "dischargeHistory": 90,
+                                                            "consumption": -50
+                                                        }
+                                                    },
+                                                    "specific": {
+                                                        "actual_temp": 23
+                                                    }
+                                                },
+                                                "consumption": 60.27272727272728,
+                                                "cumulative_consumption": 460.3409090909091,
+                                                "price": 11.735100000000003,
+                                                "cumulative_price": 83.22745984848486,
+                                                "_episode_ended": false,
+                                                "day_step": 13,
+                                                "actions": {
+                                                    "bateria1": 0
+                                                },
+                                                "agents_info": {
+                                                    "bateria1": {
+                                                        "soc": 0,
+                                                        "chargeHistory": 90,
+                                                        "dischargeHistory": 90,
+                                                        "consumption": -50
+                                                    }
+                                                },
+                                                "specific": {
+                                                    "actual_temp": 23
+                                                }
+                                            },
+                                            "consumption": 50,
+                                            "cumulative_consumption": 510.3409090909091,
+                                            "price": 8.575000000000001,
+                                            "cumulative_price": 91.80245984848486,
+                                            "_episode_ended": false,
+                                            "day_step": 14,
+                                            "actions": {
+                                                "bateria1": 0
+                                            },
+                                            "agents_info": {
+                                                "bateria1": {
+                                                    "soc": 0,
+                                                    "chargeHistory": 90,
+                                                    "dischargeHistory": 90,
+                                                    "consumption": -50
+                                                }
+                                            },
+                                            "specific": {
+                                                "actual_temp": 23
+                                            }
+                                        },
+                                        "consumption": 53.91666666666667,
+                                        "cumulative_consumption": 564.2575757575758,
+                                        "price": 9.246708333333334,
+                                        "cumulative_price": 101.04916818181819,
+                                        "_episode_ended": false,
+                                        "day_step": 15,
+                                        "actions": {
+                                            "bateria1": 0
+                                        },
+                                        "agents_info": {
+                                            "bateria1": {
+                                                "soc": 0,
+                                                "chargeHistory": 90,
+                                                "dischargeHistory": 90,
+                                                "consumption": -50
+                                            }
+                                        },
+                                        "specific": {
+                                            "actual_temp": 23
+                                        }
+                                    },
+                                    "consumption": 86.66666666666667,
+                                    "cumulative_consumption": 650.9242424242424,
+                                    "price": 14.863333333333335,
+                                    "cumulative_price": 115.91250151515152,
+                                    "_episode_ended": false,
+                                    "day_step": 16,
+                                    "actions": {
+                                        "bateria1": 4
+                                    },
+                                    "agents_info": {
+                                        "bateria1": {
+                                            "soc": 40,
+                                            "chargeHistory": 130,
+                                            "dischargeHistory": 90,
+                                            "consumption": 40
+                                        }
+                                    },
+                                    "specific": {
+                                        "actual_temp": 23
+                                    }
+                                },
+                                "consumption": 92.91666666666667,
+                                "cumulative_consumption": 743.840909090909,
+                                "price": 15.935208333333335,
+                                "cumulative_price": 131.84770984848484,
+                                "_episode_ended": false,
+                                "day_step": 17,
+                                "actions": {
+                                    "bateria1": 5
+                                },
+                                "agents_info": {
+                                    "bateria1": {
+                                        "soc": 90,
+                                        "chargeHistory": 180,
+                                        "dischargeHistory": 90,
+                                        "consumption": 50
+                                    }
+                                },
+                                "specific": {
+                                    "actual_temp": 23
+                                }
+                            },
+                            "consumption": 6,
+                            "cumulative_consumption": 749.840909090909,
+                            "price": 1.1682000000000001,
+                            "cumulative_price": 133.01590984848485,
+                            "_episode_ended": false,
+                            "day_step": 18,
+                            "actions": {
+                                "bateria1": 9
+                            },
+                            "agents_info": {
+                                "bateria1": {
+                                    "soc": 60,
+                                    "chargeHistory": 180,
+                                    "dischargeHistory": 120,
+                                    "consumption": -30
+                                }
+                            },
+                            "specific": {
+                                "actual_temp": 23
+                            }
+                        },
+                        "consumption": 3.0833333333333286,
+                        "cumulative_consumption": 752.9242424242424,
+                        "price": 0.6003249999999991,
+                        "cumulative_price": 133.61623484848485,
+                        "_episode_ended": false,
+                        "day_step": 19,
+                        "actions": {
+                            "bateria1": 8
+                        },
+                        "agents_info": {
+                            "bateria1": {
+                                "soc": 40,
+                                "chargeHistory": 180,
+                                "dischargeHistory": 140,
+                                "consumption": -20
+                            }
+                        },
+                        "specific": {
+                            "actual_temp": 23
+                        }
+                    },
+                    "consumption": 8.083333333333329,
+                    "cumulative_consumption": 761.0075757575758,
+                    "price": 1.5738249999999991,
+                    "cumulative_price": 135.19005984848485,
+                    "_episode_ended": false,
+                    "day_step": 20,
+                    "actions": {
+                        "bateria1": 7
+                    },
+                    "agents_info": {
+                        "bateria1": {
+                            "soc": 30,
+                            "chargeHistory": 180,
+                            "dischargeHistory": 150,
+                            "consumption": -10
+                        }
+                    },
+                    "specific": {
+                        "actual_temp": 23
+                    }
+                },
+                "consumption": 4.583333333333329,
+                "cumulative_consumption": 765.5909090909091,
+                "price": 0.8923749999999991,
+                "cumulative_price": 136.08243484848484,
+                "_episode_ended": false,
+                "day_step": 21,
+                "actions": {
+                    "bateria1": 7
+                },
+                "agents_info": {
+                    "bateria1": {
+                        "soc": 20,
+                        "chargeHistory": 180,
+                        "dischargeHistory": 160,
+                        "consumption": -10
+                    }
+                },
+                "specific": {
+                    "actual_temp": 23
+                }
+            },
+            "consumption": 4.083333333333329,
+            "cumulative_consumption": 769.6742424242425,
+            "price": 0.7002916666666659,
+            "cumulative_price": 136.7827265151515,
+            "_episode_ended": false,
+            "day_step": 22,
+            "actions": {
+                "bateria1": 7
+            },
+            "agents_info": {
+                "bateria1": {
+                    "soc": 10,
+                    "chargeHistory": 180,
+                    "dischargeHistory": 170,
+                    "consumption": -10
+                }
+            },
+            "specific": {
+                "actual_temp": 23
+            }
+        },
+        "consumption": 3.5833333333333286,
+        "cumulative_consumption": 773.2575757575759,
+        "price": 0.6145416666666659,
+        "cumulative_price": 137.39726818181816,
+        "_episode_ended": true,
+        "day_step": 23,
+        "actions": {
+            "bateria1": 7
+        },
+        "agents_info": {
+            "bateria1": {
+                "soc": 0,
+                "chargeHistory": 180,
+                "dischargeHistory": 180,
+                "consumption": -10
+            }
+        },
+        "specific": {
+            "actual_temp": 23
+        }
+    },
+    {
+        "father": {
+            "father": {
+                "father": {
+                    "father": {
+                        "father": {
+                            "father": {
+                                "father": {
+                                    "father": {
+                                        "father": {
+                                            "father": {
+                                                "father": {
+                                                    "father": {
+                                                        "father": {
+                                                            "father": {
+                                                                "father": {
+                                                                    "father": {
+                                                                        "father": {
+                                                                            "father": {
+                                                                                "father": {
+                                                                                    "father": {
+                                                                                        "father": {
+                                                                                            "father": {
+                                                                                                "father": {
+                                                                                                    "father": {
+                                                                                                        "father": null,
+                                                                                                        "consumption": 0,
+                                                                                                        "cumulative_consumption": 0,
+                                                                                                        "price": 0,
+                                                                                                        "cumulative_price": 0,
+                                                                                                        "_episode_ended": false,
+                                                                                                        "day_step": -1,
+                                                                                                        "actions": {},
+                                                                                                        "agents_info": {
+                                                                                                            "bateria1": {
+                                                                                                                "soc": 0,
+                                                                                                                "chargeHistory": 0,
+                                                                                                                "dischargeHistory": 0,
+                                                                                                                "consumption": 0
+                                                                                                            }
+                                                                                                        },
+                                                                                                        "specific": {
+                                                                                                            "actual_temp": 23
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "consumption": 12.416666666666671,
+                                                                                                    "cumulative_consumption": 12.416666666666671,
+                                                                                                    "price": 2.1294583333333343,
+                                                                                                    "cumulative_price": 2.1294583333333343,
+                                                                                                    "_episode_ended": false,
+                                                                                                    "day_step": 0,
+                                                                                                    "actions": {
+                                                                                                        "bateria1": 0
+                                                                                                    },
+                                                                                                    "agents_info": {
+                                                                                                        "bateria1": {
+                                                                                                            "soc": 0,
+                                                                                                            "chargeHistory": 0,
+                                                                                                            "dischargeHistory": 0,
+                                                                                                            "consumption": 0
+                                                                                                        }
+                                                                                                    },
+                                                                                                    "specific": {
+                                                                                                        "actual_temp": 23
+                                                                                                    }
+                                                                                                },
+                                                                                                "consumption": 19.818181818181813,
+                                                                                                "cumulative_consumption": 32.234848484848484,
+                                                                                                "price": 3.3988181818181813,
+                                                                                                "cumulative_price": 5.528276515151516,
+                                                                                                "_episode_ended": false,
+                                                                                                "day_step": 1,
+                                                                                                "actions": {
+                                                                                                    "bateria1": 0
+                                                                                                },
+                                                                                                "agents_info": {
+                                                                                                    "bateria1": {
+                                                                                                        "soc": 0,
+                                                                                                        "chargeHistory": 0,
+                                                                                                        "dischargeHistory": 0,
+                                                                                                        "consumption": 0
+                                                                                                    }
+                                                                                                },
+                                                                                                "specific": {
+                                                                                                    "actual_temp": 23
+                                                                                                }
+                                                                                            },
+                                                                                            "consumption": 11.916666666666671,
+                                                                                            "cumulative_consumption": 44.151515151515156,
+                                                                                            "price": 2.0437083333333343,
+                                                                                            "cumulative_price": 7.571984848484851,
+                                                                                            "_episode_ended": false,
+                                                                                            "day_step": 2,
+                                                                                            "actions": {
+                                                                                                "bateria1": 0
+                                                                                            },
+                                                                                            "agents_info": {
+                                                                                                "bateria1": {
+                                                                                                    "soc": 0,
+                                                                                                    "chargeHistory": 0,
+                                                                                                    "dischargeHistory": 0,
+                                                                                                    "consumption": 0
+                                                                                                }
+                                                                                            },
+                                                                                            "specific": {
+                                                                                                "actual_temp": 23
+                                                                                            }
+                                                                                        },
+                                                                                        "consumption": 11.666666666666671,
+                                                                                        "cumulative_consumption": 55.81818181818183,
+                                                                                        "price": 2.0008333333333344,
+                                                                                        "cumulative_price": 9.572818181818185,
+                                                                                        "_episode_ended": false,
+                                                                                        "day_step": 3,
+                                                                                        "actions": {
+                                                                                            "bateria1": 0
+                                                                                        },
+                                                                                        "agents_info": {
+                                                                                            "bateria1": {
+                                                                                                "soc": 0,
+                                                                                                "chargeHistory": 0,
+                                                                                                "dischargeHistory": 0,
+                                                                                                "consumption": 0
+                                                                                            }
+                                                                                        },
+                                                                                        "specific": {
+                                                                                            "actual_temp": 23
+                                                                                        }
+                                                                                    },
+                                                                                    "consumption": 11.916666666666671,
+                                                                                    "cumulative_consumption": 67.7348484848485,
+                                                                                    "price": 2.0437083333333343,
+                                                                                    "cumulative_price": 11.61652651515152,
+                                                                                    "_episode_ended": false,
+                                                                                    "day_step": 4,
+                                                                                    "actions": {
+                                                                                        "bateria1": 0
+                                                                                    },
+                                                                                    "agents_info": {
+                                                                                        "bateria1": {
+                                                                                            "soc": 0,
+                                                                                            "chargeHistory": 0,
+                                                                                            "dischargeHistory": 0,
+                                                                                            "consumption": 0
+                                                                                        }
+                                                                                    },
+                                                                                    "specific": {
+                                                                                        "actual_temp": 23
+                                                                                    }
+                                                                                },
+                                                                                "consumption": 16.33333333333333,
+                                                                                "cumulative_consumption": 84.06818181818183,
+                                                                                "price": 2.801166666666666,
+                                                                                "cumulative_price": 14.417693181818187,
+                                                                                "_episode_ended": false,
+                                                                                "day_step": 5,
+                                                                                "actions": {
+                                                                                    "bateria1": 0
+                                                                                },
+                                                                                "agents_info": {
+                                                                                    "bateria1": {
+                                                                                        "soc": 0,
+                                                                                        "chargeHistory": 0,
+                                                                                        "dischargeHistory": 0,
+                                                                                        "consumption": 0
+                                                                                    }
+                                                                                },
+                                                                                "specific": {
+                                                                                    "actual_temp": 23
+                                                                                }
+                                                                            },
+                                                                            "consumption": 20.75,
+                                                                            "cumulative_consumption": 104.81818181818183,
+                                                                            "price": 3.558625,
+                                                                            "cumulative_price": 17.976318181818186,
+                                                                            "_episode_ended": false,
+                                                                            "day_step": 6,
+                                                                            "actions": {
+                                                                                "bateria1": 0
+                                                                            },
+                                                                            "agents_info": {
+                                                                                "bateria1": {
+                                                                                    "soc": 0,
+                                                                                    "chargeHistory": 0,
+                                                                                    "dischargeHistory": 0,
+                                                                                    "consumption": 0
+                                                                                }
+                                                                            },
+                                                                            "specific": {
+                                                                                "actual_temp": 23
+                                                                            }
+                                                                        },
+                                                                        "consumption": 67.41666666666667,
+                                                                        "cumulative_consumption": 172.2348484848485,
+                                                                        "price": 11.561958333333335,
+                                                                        "cumulative_price": 29.538276515151523,
+                                                                        "_episode_ended": false,
+                                                                        "day_step": 7,
+                                                                        "actions": {
+                                                                            "bateria1": 3
+                                                                        },
+                                                                        "agents_info": {
+                                                                            "bateria1": {
+                                                                                "soc": 30,
+                                                                                "chargeHistory": 30,
+                                                                                "dischargeHistory": 0,
+                                                                                "consumption": 30
+                                                                            }
+                                                                        },
+                                                                        "specific": {
+                                                                            "actual_temp": 23
+                                                                        }
+                                                                    },
+                                                                    "consumption": 103.66666666666667,
+                                                                    "cumulative_consumption": 275.9015151515152,
+                                                                    "price": 17.778833333333335,
+                                                                    "cumulative_price": 47.31710984848486,
+                                                                    "_episode_ended": false,
+                                                                    "day_step": 8,
+                                                                    "actions": {
+                                                                        "bateria1": 6
+                                                                    },
+                                                                    "agents_info": {
+                                                                        "bateria1": {
+                                                                            "soc": 90,
+                                                                            "chargeHistory": 90,
+                                                                            "dischargeHistory": 0,
+                                                                            "consumption": 60
+                                                                        }
+                                                                    },
+                                                                    "specific": {
+                                                                        "actual_temp": 23
+                                                                    }
+                                                                },
+                                                                "consumption": 55.58333333333333,
+                                                                "cumulative_consumption": 331.4848484848485,
+                                                                "price": 10.822075,
+                                                                "cumulative_price": 58.13918484848486,
+                                                                "_episode_ended": false,
+                                                                "day_step": 9,
+                                                                "actions": {
+                                                                    "bateria1": 0
+                                                                },
+                                                                "agents_info": {
+                                                                    "bateria1": {
+                                                                        "soc": 90,
+                                                                        "chargeHistory": 90,
+                                                                        "dischargeHistory": 0,
+                                                                        "consumption": 60
+                                                                    }
+                                                                },
+                                                                "specific": {
+                                                                    "actual_temp": 23
+                                                                }
+                                                            },
+                                                            "consumption": 9.5,
+                                                            "cumulative_consumption": 340.9848484848485,
+                                                            "price": 1.84965,
+                                                            "cumulative_price": 59.988834848484856,
+                                                            "_episode_ended": false,
+                                                            "day_step": 10,
+                                                            "actions": {
+                                                                "bateria1": 10
+                                                            },
+                                                            "agents_info": {
+                                                                "bateria1": {
+                                                                    "soc": 50,
+                                                                    "chargeHistory": 90,
+                                                                    "dischargeHistory": 40,
+                                                                    "consumption": -40
+                                                                }
+                                                            },
+                                                            "specific": {
+                                                                "actual_temp": 23
+                                                            }
+                                                        },
+                                                        "consumption": 3.0833333333333286,
+                                                        "cumulative_consumption": 344.0681818181818,
+                                                        "price": 0.6003249999999991,
+                                                        "cumulative_price": 60.589159848484854,
+                                                        "_episode_ended": false,
+                                                        "day_step": 11,
+                                                        "actions": {
+                                                            "bateria1": 11
+                                                        },
+                                                        "agents_info": {
+                                                            "bateria1": {
+                                                                "soc": 0,
+                                                                "chargeHistory": 90,
+                                                                "dischargeHistory": 90,
+                                                                "consumption": -50
+                                                            }
+                                                        },
+                                                        "specific": {
+                                                            "actual_temp": 23
+                                                        }
+                                                    },
+                                                    "consumption": 56,
+                                                    "cumulative_consumption": 400.0681818181818,
+                                                    "price": 10.9032,
+                                                    "cumulative_price": 71.49235984848485,
+                                                    "_episode_ended": false,
+                                                    "day_step": 12,
+                                                    "actions": {
+                                                        "bateria1": 0
+                                                    },
+                                                    "agents_info": {
+                                                        "bateria1": {
+                                                            "soc": 0,
+                                                            "chargeHistory": 90,
+                                                            "dischargeHistory": 90,
+                                                            "consumption": -50
+                                                        }
+                                                    },
+                                                    "specific": {
+                                                        "actual_temp": 23
+                                                    }
+                                                },
+                                                "consumption": 60.27272727272728,
+                                                "cumulative_consumption": 460.3409090909091,
+                                                "price": 11.735100000000003,
+                                                "cumulative_price": 83.22745984848486,
+                                                "_episode_ended": false,
+                                                "day_step": 13,
+                                                "actions": {
+                                                    "bateria1": 0
+                                                },
+                                                "agents_info": {
+                                                    "bateria1": {
+                                                        "soc": 0,
+                                                        "chargeHistory": 90,
+                                                        "dischargeHistory": 90,
+                                                        "consumption": -50
+                                                    }
+                                                },
+                                                "specific": {
+                                                    "actual_temp": 23
+                                                }
+                                            },
+                                            "consumption": 50,
+                                            "cumulative_consumption": 510.3409090909091,
+                                            "price": 8.575000000000001,
+                                            "cumulative_price": 91.80245984848486,
+                                            "_episode_ended": false,
+                                            "day_step": 14,
+                                            "actions": {
+                                                "bateria1": 0
+                                            },
+                                            "agents_info": {
+                                                "bateria1": {
+                                                    "soc": 0,
+                                                    "chargeHistory": 90,
+                                                    "dischargeHistory": 90,
+                                                    "consumption": -50
+                                                }
+                                            },
+                                            "specific": {
+                                                "actual_temp": 23
+                                            }
+                                        },
+                                        "consumption": 53.91666666666667,
+                                        "cumulative_consumption": 564.2575757575758,
+                                        "price": 9.246708333333334,
+                                        "cumulative_price": 101.04916818181819,
+                                        "_episode_ended": false,
+                                        "day_step": 15,
+                                        "actions": {
+                                            "bateria1": 0
+                                        },
+                                        "agents_info": {
+                                            "bateria1": {
+                                                "soc": 0,
+                                                "chargeHistory": 90,
+                                                "dischargeHistory": 90,
+                                                "consumption": -50
+                                            }
+                                        },
+                                        "specific": {
+                                            "actual_temp": 23
+                                        }
+                                    },
+                                    "consumption": 86.66666666666667,
+                                    "cumulative_consumption": 650.9242424242424,
+                                    "price": 14.863333333333335,
+                                    "cumulative_price": 115.91250151515152,
+                                    "_episode_ended": false,
+                                    "day_step": 16,
+                                    "actions": {
+                                        "bateria1": 4
+                                    },
+                                    "agents_info": {
+                                        "bateria1": {
+                                            "soc": 40,
+                                            "chargeHistory": 130,
+                                            "dischargeHistory": 90,
+                                            "consumption": 40
+                                        }
+                                    },
+                                    "specific": {
+                                        "actual_temp": 23
+                                    }
+                                },
+                                "consumption": 92.91666666666667,
+                                "cumulative_consumption": 743.840909090909,
+                                "price": 15.935208333333335,
+                                "cumulative_price": 131.84770984848484,
+                                "_episode_ended": false,
+                                "day_step": 17,
+                                "actions": {
+                                    "bateria1": 5
+                                },
+                                "agents_info": {
+                                    "bateria1": {
+                                        "soc": 90,
+                                        "chargeHistory": 180,
+                                        "dischargeHistory": 90,
+                                        "consumption": 50
+                                    }
+                                },
+                                "specific": {
+                                    "actual_temp": 23
+                                }
+                            },
+                            "consumption": 6,
+                            "cumulative_consumption": 749.840909090909,
+                            "price": 1.1682000000000001,
+                            "cumulative_price": 133.01590984848485,
+                            "_episode_ended": false,
+                            "day_step": 18,
+                            "actions": {
+                                "bateria1": 9
+                            },
+                            "agents_info": {
+                                "bateria1": {
+                                    "soc": 60,
+                                    "chargeHistory": 180,
+                                    "dischargeHistory": 120,
+                                    "consumption": -30
+                                }
+                            },
+                            "specific": {
+                                "actual_temp": 23
+                            }
+                        },
+                        "consumption": 3.0833333333333286,
+                        "cumulative_consumption": 752.9242424242424,
+                        "price": 0.6003249999999991,
+                        "cumulative_price": 133.61623484848485,
+                        "_episode_ended": false,
+                        "day_step": 19,
+                        "actions": {
+                            "bateria1": 8
+                        },
+                        "agents_info": {
+                            "bateria1": {
+                                "soc": 40,
+                                "chargeHistory": 180,
+                                "dischargeHistory": 140,
+                                "consumption": -20
+                            }
+                        },
+                        "specific": {
+                            "actual_temp": 23
+                        }
+                    },
+                    "consumption": 8.083333333333329,
+                    "cumulative_consumption": 761.0075757575758,
+                    "price": 1.5738249999999991,
+                    "cumulative_price": 135.19005984848485,
+                    "_episode_ended": false,
+                    "day_step": 20,
+                    "actions": {
+                        "bateria1": 7
+                    },
+                    "agents_info": {
+                        "bateria1": {
+                            "soc": 30,
+                            "chargeHistory": 180,
+                            "dischargeHistory": 150,
+                            "consumption": -10
+                        }
+                    },
+                    "specific": {
+                        "actual_temp": 23
+                    }
+                },
+                "consumption": 4.583333333333329,
+                "cumulative_consumption": 765.5909090909091,
+                "price": 0.8923749999999991,
+                "cumulative_price": 136.08243484848484,
+                "_episode_ended": false,
+                "day_step": 21,
+                "actions": {
+                    "bateria1": 7
+                },
+                "agents_info": {
+                    "bateria1": {
+                        "soc": 20,
+                        "chargeHistory": 180,
+                        "dischargeHistory": 160,
+                        "consumption": -10
+                    }
+                },
+                "specific": {
+                    "actual_temp": 23
+                }
+            },
+            "consumption": 4.083333333333329,
+            "cumulative_consumption": 769.6742424242425,
+            "price": 0.7002916666666659,
+            "cumulative_price": 136.7827265151515,
+            "_episode_ended": false,
+            "day_step": 22,
+            "actions": {
+                "bateria1": 7
+            },
+            "agents_info": {
+                "bateria1": {
+                    "soc": 10,
+                    "chargeHistory": 180,
+                    "dischargeHistory": 170,
+                    "consumption": -10
+                }
+            },
+            "specific": {
+                "actual_temp": 23
+            }
+        },
+        "consumption": 3.5833333333333286,
+        "cumulative_consumption": 773.2575757575759,
+        "price": 0.6145416666666659,
+        "cumulative_price": 137.39726818181816,
+        "_episode_ended": true,
+        "day_step": 23,
+        "actions": {
+            "bateria1": 7
+        },
+        "agents_info": {
+            "bateria1": {
+                "soc": 0,
+                "chargeHistory": 180,
+                "dischargeHistory": 180,
+                "consumption": -10
+            }
+        },
+        "specific": {
+            "actual_temp": 23
+        }
+    }
+]

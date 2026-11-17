@@ -1,0 +1,1 @@
+kubectl get deployments -o name | Where-Object { $_ -match "receptor" } | ForEach-Object { kubectl delete $_ }

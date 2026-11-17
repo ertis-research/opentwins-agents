@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mqtt-timer-deployment
+  labels:
+    app: mqtt-timer-app  # Etiqueta para identificar el Deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mqtt-timer-pod  # Esta etiqueta debe coincidir con la del pod
+  template:
+    metadata:
+      labels:
+        app: mqtt-timer-pod  # <--- ESTA es la etiqueta que buscas
+    spec:
+      containers:
+      - name: mqtt-container
+        image: <DOCKER_REGISTRY>/gedera/ready:1.0.4
+        imagePullPolicy: IfNotPresent # Para que use la imagen local si no la has subido a un registro

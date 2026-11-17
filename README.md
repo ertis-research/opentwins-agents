@@ -77,6 +77,35 @@ This workflow ensures reproducibility, modularity, and ease of adoption.
 | `PUT` | `/agent/{context}/{agentId}/twin/{twinId}/unlink` | Path: `context`, `agentId`, `twinId` | `200` unlinked · `404` error |
 ---
 
+## Repository Structure
+
+| Path | Content |
+|------|---------|
+| `main.py`, `routes/`, `service/`, `utils/` | Agent Management Service (REST API and Kubernetes controller) |
+| `kubernetes/` | Deployment manifests for the Agent Management Service |
+| `templates/` | Generic data consumer/producer agent templates (MQTT, InfluxDB, TensorFlow) |
+| `examples/gedera/` | Agents developed for the GEDERA energy-flexibility use case |
+| `validation/` | Experiments used to evaluate the framework, with their datasets and figures |
+
+### Examples (`examples/gedera/`)
+
+- **`DQNSecondaryMarketService`** – Flexibility agent based on Deep Reinforcement Learning (DQN) for the secondary regulation market, controlling building assets (air conditioning, storage battery, EV chargers). Includes training notebooks and pre-trained models.
+- **`SearchFlexibilityService`** – Flexibility agent based on search algorithms (BFS, DFS, their pruned variants and a price-minimizing hybrid search) that computes schedules for the same building assets.
+- **`SearchFlexibilityService_AdaByronSpecific`** – Variant of the previous agent tailored to the Ada Byron building.
+
+Connection settings (MQTT broker, InfluxDB, ESIOS API token) appear in the code as placeholders such as `<MQTT_BROKER_HOST>`, `<MQTT_USER>`, `<MQTT_PASSWORD>`, `<INFLUX_URL>`, `<INFLUX_TOKEN>` or `<ESIOS_TOKEN>`. Replace them with your own values before running.
+
+### Validation (`validation/`)
+
+- **`emisor/`, `receptor/`** – Sender/receiver agents used to measure MQTT message latency between agents.
+- **`readiness-test/`** – Measures the time from deployment request until an agent is ready.
+- **`swarm test/`** – Scalability test with many concurrent agents.
+- **`deploy.py`, `creation_delete_benchmark.py`, `get_creation_ready_timestamps.py`** – Scripts that deploy agents through the Agent Management Service API and collect timings.
+- **`datasets/`, `datasets_deploy/`** – Collected results (one CSV per receiver pod / deployment group). `datasets/one_to_rfule_them_all.csv.gz` is the concatenation of all message-latency CSVs.
+- **`plot.ipynb`, `figures/`** – Analysis notebook and resulting figures.
+
+---
+
 ## Installation
 
 ### Prerequisites

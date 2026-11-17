@@ -159,3 +159,15 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .env
+
+# Certificados y claves (no subir nunca)
+certs/
+*.crt
+*.key
+*.pem
+*.p12
+.gitconfig
+
+# Validation: datos crudos y CSV concatenado sin comprimir (se versiona el .csv.gz)
+validation/backup/
+validation/datasets/one_to_rfule_them_all.csv
